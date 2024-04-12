@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tax Calculator Website</title>
+</head>
+<body>
+  
+    <div class="container">
+    <form id="taxForm">
+       <div id="resultContainer"></div>
+  
+  <label for="income">Enter gross annual income <span>?</span></label>
+  <input type="number" id="income" placeholder="Enter gross annual income" required>
+  <span class="error" id="incomeError">!</span>
+
+  <label for="deductions">Enter extra income <span>?</span></label>
+  <input type="number" id="deductions" placeholder="Enter extra icome from other sources" required>
+  <span class="error" id="deductionsError">!</span>
+
+  <label for="age">Enter age group <span>?</span></label>
+  <select id="age">
+    <option value="<40">Less than 40</option>
+    <option value="≥40 & <60">40 to 60</option>
+    <option value="≥60">60 or more</option>
+  </select>
+  <label for="deductions">Enter total application deductions <span>?</span></label>
+  <input type="number" id="deductions" placeholder="Add total applicable deductions" required>
+  <span class="error" id="deductionsError">!</span>
+
+  <button type="button" id="submit">Submit</button>
+</form>
+</div>
+ 
+</body>
+<script src="main.js">
+
+</script>
+</html>
+
